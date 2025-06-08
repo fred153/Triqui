@@ -16,22 +16,22 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 38px);
-      grid-template-rows: repeat(3, 38px);
+      grid-template-columns: repeat(3, 76px);
+      grid-template-rows: repeat(3, 76px);
       gap: 10px;
       justify-content: center;
-      margin-bottom: 30px;
+      margin-bottom: 76px;
     }
 
     .grid button {
-      width: 38px;
-      height: 38px;
-      font-size: 14px;
+      width: 76px;
+      height: 76px;
+      font-size: 32px;
       cursor: pointer;
     }
 
     #label {
-      font-size: 18px;
+      font-size: 36px;
       color: #333;
     }
   </style>
