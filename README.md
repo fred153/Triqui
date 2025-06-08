@@ -12,7 +12,8 @@
       font-size: 18px;
     }
     h1 {
-      color: #007acc;
+      text-decoration: none;
+      border-bottom: none;
     }
   </style>
 </head>
