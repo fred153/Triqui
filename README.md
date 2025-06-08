@@ -41,15 +41,15 @@
   <h1>Título de la Página</h1>
 
   <div class="grid">
-    <button onclick="accion(1)">1</button>
-    <button onclick="accion(2)">2</button>
-    <button onclick="accion(3)">3</button>
-    <button onclick="accion(4)">4</button>
-    <button onclick="accion(5)">5</button>
-    <button onclick="accion(6)">6</button>
-    <button onclick="accion(7)">7</button>
-    <button onclick="accion(8)">8</button>
-    <button onclick="accion(9)">9</button>
+    <button onclick="accion(1)"></button>
+    <button onclick="accion(2)"></button>
+    <button onclick="accion(3)"></button>
+    <button onclick="accion(4)"></button>
+    <button onclick="accion(5)"></button>
+    <button onclick="accion(6)"></button>
+    <button onclick="accion(7)"></button>
+    <button onclick="accion(8)"></button>
+    <button onclick="accion(9)"></button>
   </div>
 
   <div id="label">Tu Turno</div>
