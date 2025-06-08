@@ -58,6 +58,39 @@
     function accion(num) {
       document.getElementById("label").textContent = "Presionaste el botón " + num;
     }
+    function  crear_malla_vacia(){
+      const malla = [];
+      for(let i = 0;i<3;i++){
+        const fila=[];
+        for(let j = 0; j<3;j++){
+          fila.push(" ");
+        }
+        malla.push(fila);
+      }
+      return malla;
+    }
+    function mallaAgregar(malla, a, b, c) {
+      const mallaNueva = malla.map(fila => fila.slice());
+      if (mallaNueva[b][c] !== " ") {
+        return mallaNueva;
+      }
+      mallaNueva[b][c] = `[${a}]`;
+      return mallaNueva;
+    }
+    function buscar_nodo(arbol, valor, nivel = 0) {
+      if (arbol.valor === valor) {
+        return { encontrado: true, nivel: nivel };
+      }
+      if (arbol.hijos && arbol.hijos.length > 0) {
+        for (let i = 0; i < arbol.hijos.length; i++) {
+          const resultado = buscar_nodo(arbol.hijos[i], valor, nivel + 1);
+          if (resultado.encontrado) {
+            return resultado;
+          }
+        }
+      }
+      return { encontrado: false, nivel: nivel };
+    }
   </script>
 
 </body>
